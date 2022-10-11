@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+            prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.unito.mailer.client.controller.LoginController">
+    <top>
+        <AnchorPane prefHeight="202.0" prefWidth="579.0" style="-fx-background-color: white;"
+                    BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fitHeight="182.0" fitWidth="464.0" layoutX="94.0" layoutY="10.0" pickOnBounds="true"
+                           preserveRatio="true">
+                    <image>
+                        <Image url="@../../../../../../../../Server/src/main/resources/it/unito/mailer/server/img/unito-logo-1.png"/>
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+    </top>
+    <bottom>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;"
+                    BorderPane.alignment="CENTER">
+            <children>
+                <Button fx:id="button" layoutX="254.0" layoutY="135.0" mnemonicParsing="false" onAction="#loginRequest"
+                        prefHeight="39.0" prefWidth="92.0" text="Log In">
+                    <font>
+                        <Font name="System Bold" size="12.0"/>
+                    </font>
+                </Button>
+                <Label fx:id="errorMessage" layoutX="249.0" layoutY="43.0">
+                    <font>
+                        <Font size="14.0"/>
+                    </font>
+                </Label>
+                <ChoiceBox fx:id="userChoice" layoutX="183.0" layoutY="87.0" prefHeight="25.0" prefWidth="235.0"/>
+            </children>
+        </AnchorPane>
+    </bottom>
+</BorderPane>

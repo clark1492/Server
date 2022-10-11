@@ -1,0 +1,15 @@
+package it.unito.mailer.client.model;
+
+public enum Protocol {
+  LOGIN_REQUEST,
+  USERLIST_REQUEST,
+  MAILLIST_REQUEST,
+  EXIT_REQUEST,
+  USER_ID,
+  SEND_EMAIL,
+  DEL_EMAIL,
+  DRAFTS_EMAIL,
+  READ_FLAG,
+  SERVER_SUCCESS,
+  SERVER_UNSUCCESS
+}
